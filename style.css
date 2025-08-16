@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   background-color: grey;
   margin: 0;
@@ -211,3 +212,364 @@ body, html {
   transform: scale(1.05);
   filter: brightness(90%);
 }
+=======
+body {
+  background-color: grey;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+/* Nav Bar */
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #DC143C;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15% 0 10%;
+  box-sizing: border-box;
+  z-index: 1000;
+  height: 120px;
+  margin-bottom: 0;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center; 
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.logo img {
+  display: block;
+  height: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item a {
+  color: white;          
+  font-weight: bold;     
+  text-decoration: none; 
+  font-size: 1.5rem;       
+}
+
+
+/* Main Body */
+
+.parent_container {
+  background-color: white;        
+  width: 80%;                    
+  margin: 0 auto;                 
+  padding: 20px;                  
+  box-sizing: border-box;
+  margin-top: 80px;         
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* About us Box */
+
+.about_us_main {
+    font-size: 48px;
+    font-style: bold;
+    margin-left: 10px;
+    font-family: fantasy;
+    font-weight: 590;
+}
+
+.about_us_box {
+    background-color: black;
+    color: white;
+    padding: 15px 20px 30px;
+    margin: -20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 24px;
+    
+}
+
+.about_us_box_text {
+    margin-left: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* Info Section */
+.info_section {
+    display: flex;                    
+    justify-content: space-between;   
+    width: 90%;                       /* Same as your parent container width */
+    margin: 0 auto;                   /* Center the section horizontally */
+    padding: 10px 0;                  /* Optional vertical spacing */
+    box-sizing: border-box;
+}
+
+.info_box {
+  position: relative;             /* Needed for absolute positioning of children */
+  width: 400px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  border-radius: 8px;             /* Optional: rounded corners */
+  color: white;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease-in-out, filter 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+}
+
+.info_box:hover {
+  transform: scale(1.05);          /* Slightly bigger */
+  filter: brightness(85%);         /* Darker */
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.3); /* Optional: slightly stronger shadow */
+}
+
+.info-title {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.cta-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);   /* Center horizontally */
+  width: 130px;
+  height: 40px;
+  border-radius: 5%;            /* Circle shape */
+  border: none;
+  background-color: white;     /* Example color */
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.cta-button:hover {
+  background-color: rgb(229, 229, 229);
+  color: #DC143C;
+  
+}
+
+#infobox1 {
+  width: 45%;
+  height: 350px;
+  background-image: url('infobox1.png'); /* path to your image */
+  background-size: cover;      /* Make image cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;               /* Optional: text color on top of image */
+  text-align: center;         /* Center text horizontally */
+}
+
+#infobox2 {
+  width: 45%;
+  height: 350px;
+  background-image: url('infobox2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+/* List of Sights */
+.cities_section {
+  display: flex;                      /* Arrange boxes in a row */
+  justify-content: space-between;     /* Evenly distributed horizontally */
+  flex-wrap: wrap;                    /* Wrap if screen is too small */
+  background-color: #e0e0e0;          /* Light grey background */
+  box-sizing: border-box;
+  margin: 20px -20px;
+  padding: 30px 80px;
+}
+
+.sight_box {
+ transition: transform 0.3s ease-in-out, filter 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
+ box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+ border-radius: 15px;
+ background-color: #DC143C;
+  
+}
+
+/* Optional hover effect for sight_boxes */
+.sight_box:hover {
+  transform: scale(1.05);
+  filter: brightness(90%);
+}
+
+
+
+/* PAGE 2 - TIPS */
+/*               */
+/*               */
+/*               */
+#tripInfobox1 {
+  width: 45%;
+  height: 350px;
+  background-image: url('tripInfobox1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+#tripInfobox2 {
+  width: 45%;
+  height: 350px;
+  background-image: url('tripInfobox2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+#tripInfobox3 {
+  width: 45%;
+  height: 350px;
+  background-image: url('tripInfobox3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+#tripInfobox4 {
+  width: 45%;
+  height: 350px;
+  background-image: url('tripInfobox4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+
+
+/* PAGE 3 - Sight TIPS */
+/*               */
+/*               */
+/*               */
+.sightTips_container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  background-color: white;
+  height: 460px;
+}
+
+.sighTips_containerBox {
+  width: 400px;
+  height: 400px;
+  background-color: #DC143C;
+  border-radius: 50%; /* makes it a circle */
+  background-size: 99% auto;      /* image covers 90% of circle */
+  background-position: top left;  /* align image to top-left to reveal bottom-right */
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-size 0.3s ease;
+
+}
+
+.sighTips_containerBox:hover {
+  transform: scale(1.05); /* grow */
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6); /* stronger shadow */
+  background-color: white;
+  background-size: 98% auto;      /* image covers 90% of circle */
+
+
+}
+
+.sighTips_containerBoxText {
+  position: relative;
+  top: 58%;
+  color: black;
+  text-align: center;
+  font-family: fantasy;
+  font-size: 1.5rem;
+  font-weight: 580;
+
+}
+
+#sighTips_containerBox1 {
+  background-image: url('sightPic1.png');
+
+}
+
+#sighTips_containerBox2 {
+  background-image: url('sightPic2.png');
+
+}
+
+#sighTips_containerBox3 {
+  background-image: url('sightPic3.png');
+
+}
+
+>>>>>>> 0bf458d (Added separate pages for tips about practicalities and sights)
