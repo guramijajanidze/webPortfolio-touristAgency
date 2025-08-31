@@ -1,218 +1,3 @@
-<<<<<<< HEAD
-body {
-  background-color: grey;
-  margin: 0;
-  padding: 0;
-
-}
-
-
-
-/* Nav Bar */
-
-
-.navbar {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  background-color: #DC143C;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 15% 0 10%;
-  box-sizing: border-box;
-  z-index: 1000;
-  height: 120px;
-  margin-bottom: 0;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center; 
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  gap: 50px;
-}
-
-.logo {
-  display: flex;
-  align-items: flex-end;
-}
-
-.logo img {
-  display: block;
-  height: 90px;
-  margin: 0;
-  padding: 0;
-}
-
-.nav-item a {
-  color: white;          
-  font-weight: bold;     
-  text-decoration: none; 
-  font-size: 1.5rem;       
-}
-
-
-/* Main Body */
-
-.parent_container {
-  background-color: white;        
-  width: 80%;                    
-  margin: 0 auto;                 
-  padding: 20px;                  
-  box-sizing: border-box;         
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-}
-
-
-/* About us Box */
-
-.about_us_main {
-    font-size: 48px;
-    font-style: bold;
-    margin-left: 10px;
-}
-
-.about_us_box {
-    background-color: black;
-    color: white;
-    padding: 15px 20px 30px;
-    margin: -20px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    font-size: 24px;
-    
-}
-
-.about_us_box_text {
-    margin-left: 10px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-
-/* Info Section */
-.info_section {
-    display: flex;                    
-    justify-content: space-between;   
-    width: 90%;                       /* Same as your parent container width */
-    margin: 0 auto;                   /* Center the section horizontally */
-    padding: 10px 0;                  /* Optional vertical spacing */
-    box-sizing: border-box;
-}
-
-.info_box {
-  position: relative;             /* Needed for absolute positioning of children */
-  width: 400px;
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
-  border-radius: 8px;             /* Optional: rounded corners */
-  color: white;
-  padding: 10px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.3s ease-in-out, filter 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
-}
-
-.info_box:hover {
-  transform: scale(1.05);          /* Slightly bigger */
-  filter: brightness(85%);         /* Darker */
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.3); /* Optional: slightly stronger shadow */
-}
-
-.info-title {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 10px;
-}
-
-.cta-button {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);   /* Center horizontally */
-  width: 130px;
-  height: 40px;
-  border-radius: 5%;            /* Circle shape */
-  border: none;
-  background-color: white;     /* Example color */
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
-  font-size: large;
-  margin-bottom: 10px;
-}
-
-#infobox1 {
-  width: 45%;
-  height: 350px;
-  background-image: url('infobox1.png'); /* path to your image */
-  background-size: cover;      /* Make image cover the entire container */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;               /* Optional: text color on top of image */
-  text-align: center;         /* Center text horizontally */
-}
-
-#infobox2 {
-  width: 45%;
-  height: 350px;
-  background-image: url('infobox2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-}
-
-/* List of Sights */
-.cities_section {
-  display: flex;                      /* Arrange boxes in a row */
-  justify-content: space-between;     /* Evenly distributed horizontally */
-  flex-wrap: wrap;                    /* Wrap if screen is too small */
-  background-color: #e0e0e0;          /* Light grey background */
-  box-sizing: border-box;
-  margin: 20px -20px;
-  padding: 30px 80px;
-}
-
-.sight_box {
- transition: transform 0.3s ease-in-out, filter 0.6s ease-in-out, box-shadow 0.6s ease-in-out;
- box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
- border-radius: 15px;
- background-color: #DC143C;
-  
-}
-
-/* Optional hover effect for sight_boxes */
-.sight_box:hover {
-  transform: scale(1.05);
-  filter: brightness(90%);
-}
-=======
 body {
   background-color: grey;
   margin: 0;
@@ -517,7 +302,7 @@ body, html {
   justify-content: center;
   gap: 60px;
   background-color: white;
-  height: 460px;
+  height: 600px;
 }
 
 .sighTips_containerBox {
@@ -534,6 +319,8 @@ body, html {
   color: white;
   box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease, background-size 0.3s ease;
+  cursor: pointer; /* <-- This changes the cursor on hover */
+
 
 }
 
@@ -570,3 +357,133 @@ body, html {
 #sighTips_containerBox3 {
   background-image: url('sightPic3.png');
 
+}
+
+
+
+/* New container styling */
+.track-container {
+  display: none; /* hidden by default */
+  background-color: #c2c1c1b0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 20px;
+}
+
+.track-container h2 {
+  font-family: fantasy;
+  font-weight: 590;
+  font-size: 48px;
+  font-style: normal;
+  margin: 0;
+}
+
+/* Selected box styling */
+.sighTips_containerBox.selected {
+  background-color: white;
+}
+
+.sighTips_containerBox.selected h3 {
+  color: #DC143C; /* red text */
+}
+
+
+/* Text and Photo */
+.track_container_textNphoto {
+  display: flex;
+  justify-content:space-around;
+  gap: 50px;
+}
+
+.track_container_text {
+  width: 55%;
+  font-size: 26px;
+}
+
+.track_container_text h3 {
+  margin: 10px 0px;
+}
+
+.track_container_text p {
+  margin: 0;
+}
+
+.track_container_photo {
+  background-color: black;
+  width: 600px;
+  height: 400px;
+  border-radius: 15px;
+}
+
+/* Here goes Slider */
+/* Slider container */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Slides wrapper */
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+/* Each image */
+.slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgb(220, 20, 60);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: background 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(255, 0, 0, 0.9);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+#hikeTrack {
+  display: none;
+}
+
+
+/* NEW */
+.track {
+  max-height: 0; /* hidden by default */
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+}
+
+.track.active {
+  max-height: 1000px; /* large enough to fit content */
+  opacity: 1;
+}
